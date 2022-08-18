@@ -74,7 +74,7 @@ html {
 .gallery{
 	display: grid;
 	grid-template-columns: repeat(9,1fr); /*nuestro grid tiene 9 columnas*/
-	grid-template-rows: repeat(18,5vw);  /*y 28 filas*/
+	grid-template-rows: repeat(17,5vw);  /*y 28 filas*/
 	grid-gap:15px; 
 }
 	/*sizing images to conserve ratio etc*/
