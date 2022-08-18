@@ -1,0 +1,160 @@
+body{
+	font-family:"IBM Plex Mono";
+	font-weight:300;
+	line-height:1.6;
+	color: white;
+	background: black;
+}
+
+header{
+	text-align:center !important;
+	display:block !important;
+}
+
+.sesion{
+	text-align:center;
+	font-size:120%;
+	margin: 5%;
+}
+
+.contact{
+	font-size:80%;
+}
+
+.navbar{
+	display: inline-block;
+	border-style:outset;
+	border-width:5%;
+	border-color:#BF0000;
+	background: #400000; 
+	padding:0.5%;
+	margin-top: 1%;
+	
+	
+}
+
+nav{
+	margin:5%;
+	text-align:center;
+}
+
+a,href:visited{
+	color:white;
+	text-decoration:none;
+}
+
+a,href{
+	text-decoration:none;
+}
+
+.navbar:hover{
+	background:red;
+}
+
+
+
+/*galería de fotos*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+html {
+  box-sizing: border-box;
+  font-size: 100%; 
+}
+.container{
+	width: 60%;
+	margin: 2rem auto;
+}
+
+
+.gallery{
+	display: grid;
+	grid-template-columns: repeat(9,1fr); /*nuestro grid tiene 9 columnas*/
+	grid-template-rows: repeat(18,5vw);  /*y 28 filas*/
+	grid-gap:15px; 
+}
+	/*sizing images to conserve ratio etc*/
+
+.gallery_img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	display: block;
+}
+	/*we have a grid, now we adapt where each img starts and end on that grid*/
+	/*grid column start indicates the grid line at the left edge of the pic*/
+	/*grid column end indicates the grid line at the right edge of the pic*/
+	/*grid row start indicates the grid line at the upper edge of the image*/
+	/*grid row end indicates the grid line at the lower edge of the image*/
+.gallery_item--1{
+	grid-column-start:1;
+	grid-column-end:7;
+	grid-row-start:9;
+	grid-row-end:18;
+}
+.gallery_item--2{
+	grid-column-start:4;
+	grid-column-end:10;
+	grid-row-start:1;
+	grid-row-end:9;
+}
+.gallery_item--3{
+	grid-column-start:7;
+	grid-column-end:10;
+	grid-row-start:9;
+	grid-row-end:13;
+}
+.gallery_item--4{
+	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start:5;
+	grid-row-end:9;
+}
+.gallery_item--5{
+	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start:1;
+	grid-row-end:5;
+}
+.gallery_item--6{
+	grid-column-start:7;
+	grid-column-end:10;
+	grid-row-start:13;
+	grid-row-end:18;
+}
+
+
+/*fin galería**********************/
+footer{
+	text-align: center;
+}
+
+
+
+.sections{
+	width: 90%;
+	display:block;
+	text-align: center;
+	margin: auto;
+}
+
+nav a{
+	display:inline-block;
+	font-size: 40%;	
+
+}
+
+nav a:hover{
+	font-size:80%;
+}
+
+section#editorials{
+	background:url(../imgs/mauro7.jpg);
+	background-color: transparent;
+	background-size:cover;
+}
+	
