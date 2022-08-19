@@ -26,8 +26,15 @@ header{
 	background: #400000; 
 	padding:0.5%;
 	margin-top: 1%;
+	transition: 5s background ;
 	
 	
+	
+	
+}
+.navbar:hover{
+	background:red;
+	font-size:80%;
 }
 
 nav{
@@ -45,9 +52,7 @@ a,href{
 	text-decoration:none;
 }
 
-.navbar:hover{
-	background:red;
-}
+
 
 
 footer{
@@ -64,9 +69,6 @@ nav a{
 
 }
 
-nav a:hover{
-	font-size:80%;
-}
 
 
 
