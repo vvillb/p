@@ -28,9 +28,14 @@
 
 	
 	<nav class="sticky">
-		<a href="#hero">
-			<img src="assets/Logo.png" alt="Logo">
-			<span id="nav-title" style="display: none;"><h5>LOS ANGELES</h5><h5>MOUNTAINS</h5> </span>
+		<a href="#hero" class="navLogo">
+			<div>
+				<img src="assets/Logo.png" alt="Logo">
+			</div>
+			<div>
+				<span id="nav-title" style="display: none;"><h5 class="LA">LOS ANGELES</h5><h5 class="MN">MOUNTAINS</h5> </span>
+			</div>
+			
 			
 		</a>
 		
@@ -48,10 +53,15 @@
 </section>
 
 <section id="section01">
-	<div>
-		<h1>01</h1>
-		<h2>HISTORY</h2>
-		<p>Qui ad consequat dolore voluptate non eiusmod. Pariatur cillum nulla nostrud nulla ipsum incididunt eiusmod irure reprehenderit non aute aute. Aliquip ad do id cillum. Sit laboris sint magna aliqua in elit Lorem nulla cupidatat ad dolore. Ullamco occaecat deserunt sint sint aute nisi Lorem voluptate ex esse id enim.</p>
+	<div class="sectionTitle">
+		<div class="subTitle">
+			<h1 class="bigNumber">01.</h1>
+			<h1 class="secondTitle">HISTORY</h1>
+		</div>
+		<div>
+			<p class="sectionText">Qui ad consequat dolore voluptate non eiusmod. Pariatur cillum nulla nostrud nulla ipsum incididunt eiusmod irure reprehenderit non aute aute. Aliquip ad do id cillum. Sit laboris sint magna aliqua in elit Lorem nulla cupidatat ad dolore. Ullamco occaecat deserunt sint sint aute nisi Lorem voluptate ex esse id enim.</p>
+		</div>
+		
 	</div>
 	<div class="box1">
 		<p>carousel</p>
@@ -63,6 +73,22 @@
 	<h2>CLIMB</h2>
 	
 </section>
+<footer class="footer">
+	<div class="footerLogo">
+		<div>
+		<img src="assets/Logo.png" alt="Logo">
+	</div>
+	<div>
+		<h5 class="LA">LOS ANGELES</h5><h5 class="MN">MOUNTAINS</h5>
+	</div>
+	</div>
+	<div class="copy">
+		<h5>COPYRIGHT 2016. ALL RIGHTS RESERVED</h5>
+	</div>
+	
+	
+			
+</footer>
 <script>
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('nav');

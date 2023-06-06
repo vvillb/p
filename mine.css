@@ -38,6 +38,17 @@ section#section01{
     
 }
 
+footer{
+    background-color: #00304E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footerLogo{
+    display: flex;
+}
 .heroTitle{
     color:black;
     font-weight:800;
@@ -137,4 +148,47 @@ section {
 /* Mobile styling - hide text links and show hamburger icon */
 @media (max-width: 600px) {
 
+}
+
+
+.LA{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 90%;
+    color: #084e77;
+}
+.MN{
+    text-align: center;
+    font-size: 100%;
+    color: #084e77;
+}
+
+.navLogo{
+    display: flex;
+}
+
+.copy{
+    color: #084e77;
+}
+
+.bigNumber{
+    color: #084e77;
+    font-size: 400%;
+}
+.secondTitle{
+    color: #00304E;
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 3%;
+}
+
+.sectionTitle{
+    display: flex;
+    flex-direction: column;
+    padding: 20%;
+}
+.subTitle{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
 }
