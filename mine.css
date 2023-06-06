@@ -1,0 +1,60 @@
+/* Make the image cover the whole section and centered */
+body {
+    background-image: url('/assets//background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Make the header fixed at the top */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* some shadow for depth */
+    padding: 1em;
+    z-index: 1000;
+}
+
+/* Style the navigation links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Make sure sections are offset from the top so they aren't covered by the header */
+section {
+    margin-top: 100px; /* adjust this as necessary */
+    padding: 1em;
+    height: 2000px; /* temporary height to enable scrolling; replace with actual content */
+}
+
+/* Mobile styling - hide text links and show hamburger icon */
+@media (max-width: 600px) {
+    nav li {
+        display: none;
+    }
+
+    nav::before {
+        content: "☰"; /* this is a simple hamburger icon, replace with an image if you like */
+        font-size: 2em;
+        line-height: 1;
+        cursor: pointer;
+    }
+}
