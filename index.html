@@ -17,7 +17,10 @@
 <!--css-->
 	<link rel="stylesheet" href="mine.css" type="text/css">
 <!--pack de letra-->
-	<link href="https://fonts.googleapis.com/css?family=IBM Plex Mono" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+
 
 </head>
  <body>
@@ -27,6 +30,8 @@
 	<nav class="sticky">
 		<a href="#hero">
 			<img src="assets/Logo.png" alt="Logo">
+			<span id="nav-title" style="display: none;"><h5>LOS ANGELES</h5><h5>MOUNTAINS</h5> </span>
+			
 		</a>
 		
 		<ul id="nav-list">
@@ -37,7 +42,8 @@
 </header>
 <section id="hero">
 	<div class="hero">
-		<h1>LOS ANGELES MOUNTAINS</h1>
+		<h1 class="heroTitle">LOS ANGELES </h1>
+		<h1 class="heroTitle2"> MOUNTAINS</h1>
 	</div>	
 </section>
 
@@ -60,11 +66,14 @@
 <script>
     window.addEventListener('scroll', function() {
         var navbar = document.querySelector('nav');
+		const title = document.getElementById('nav-title');
         var scrollPosition = window.scrollY;
         if (scrollPosition > window.innerHeight) {
             navbar.classList.add('scrolled');
+			title.style.display = "inline";
         } else {
             navbar.classList.remove('scrolled');
+			title.style.display = "none";
         }
     });
 </script>
