@@ -6,7 +6,11 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-
+section#hero{
+	background:url('/assets/background.png');
+	background-color: transparent;
+	background-size:cover;
+}
 /* Make the header fixed at the top */
 header {
     display: flex;
