@@ -109,14 +109,7 @@ nav ul {
 }
 
 
-.box1 {
-    background-color: #00304E;
-    color: #fff;
-    opacity: .5;
-    align-self: flex-end;
-    width: 100vw;
-    height: 20vh;
-}
+
 nav li {
     margin: 0 1em;
 }
@@ -177,7 +170,7 @@ section {
 }
 .secondTitle{
     color: #00304E;
-    position: absolute;
+    
     padding-left: 10%;
     padding-top: 3%;
 }
@@ -199,7 +192,7 @@ div#climb{
     flex-direction: row;
 }
 
-div#climb>p{
+div#climb2>p{
     padding-left: 20%;
-    position: fixed;
+    
 }
