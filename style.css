@@ -1,0 +1,101 @@
+section#section01{
+	background:url('./assets/background2.png');
+	background-color: transparent;
+	background-size:cover;
+    padding: 0;
+    margin: 0; 
+
+}
+section#section02{
+	background:url('./assets/background3.png');
+	background-color: transparent;
+	background-size:cover;
+    padding: 0;
+    margin: 0;   
+    
+}
+body{
+	background: url('./assets/background.png');
+    background-size:cover;    
+   
+}
+
+section#hero{
+     justify-content: center;
+    display: grid;
+    align-content: center;
+}
+
+.heroTitle{
+    color:black;
+    
+}
+.heroTitle2{
+    color:#00304E;
+    
+    
+}
+
+.LA{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 90%;
+    color: #084e77;
+}
+.MN{
+    text-align: center;
+    font-size: 100%;
+    color: #084e77;
+}
+
+footer{
+    background-color: #00304E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footerLogo{
+    display: flex;
+}
+.nav-scrolled #nav-title {
+    display: inline;
+
+}
+nav {
+    transition: all 0.5s ease; /* This will animate the color change */
+    background-color: transparent; /* transparent on hero */
+    color: white; /* white text on hero */
+}
+nav.scrolled {
+    background-color: white; /* white on other sections */
+    color: #00304E; /* darkblue text on other sections */
+}
+
+/* Style the navigation links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 3%;
+    display: flex;
+   
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+   
+    text-decoration: none;
+    justify-content: space-around;
+    color: inherit; /* this will make the link text the same color as the parent element */
+    transition: all 0.5s ease; /* animate the color change */
+}
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
