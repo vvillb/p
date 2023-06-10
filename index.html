@@ -86,6 +86,31 @@
 		<div>
 			<p>Officia fugiat deserunt tempor adipisicing minim consequat.</p>
 		</div>
+		<div class="tabs-accordion">
+		<div class="tab">
+			<button class="tab-title active" data-target="#content1">Mountain 1</button>
+			<div id="content1" class="tab-content">
+			<h3>Schedule</h3>
+			<ul>
+				<li>25 Nov 2023 - Vestibulum viverra</li>
+				<li>28 Nov 2023 - Vestibulum viverra</li>
+				
+			</ul>
+			</div>
+		</div>
+		<div class="tab">
+			<button class="tab-title" data-target="#content2">Mountain 2</button>
+			<div id="content2" class="tab-content">
+			<h3>Schedule</h3>
+			<ul>
+				<li>29 Nov 2023 - Vestibulum viverra</li>
+				<li>30 Nov 2023 - Vestibulum viverra</li>
+				
+			</ul>
+			</div>
+		</div>
+		</div>
+
 	</div>
 	
 	
@@ -119,6 +144,17 @@
 			title.style.display = "none";
         }
     });
+	document.querySelectorAll(".tabs-accordion .tab-title").forEach(button => {
+    button.addEventListener("click", () => {
+      const activeButton = document.querySelector(".tabs-accordion .tab-title.active");
+      activeButton.classList.remove("active");
+      activeButton.nextElementSibling.style.maxHeight = 0;
+      
+      button.classList.add("active");
+      button.nextElementSibling.style.maxHeight = "100vh";
+    });
+  });
+  
 </script>
 
 

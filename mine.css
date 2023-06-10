@@ -251,3 +251,56 @@ section {
   }
   
   
+
+  .tabs-accordion {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .tabs-accordion .tab-title {
+    display: block;
+    background: #eee;
+    padding: 10px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .tabs-accordion .tab-content {
+    max-height: 0;
+    background: #fff;
+    overflow: hidden;
+    transition: max-height 0.3s;
+  }
+  
+  .tabs-accordion .tab-title.active ~ .tab-content {
+    max-height: 100vh;
+  }
+  
+  .tabs-accordion h3 {
+    margin-top: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .tabs-accordion {
+      display: flex;
+    }
+  
+    .tabs-accordion .tab-title {
+      order: -1;
+      flex: 1 0 auto;
+      margin-right: 2px;
+      text-align: center;
+    }
+  
+    .tabs-accordion .tab-content {
+      order: 1;
+      flex: 1 0 auto;
+      max-height: none;
+    }
+  
+    .tabs-accordion .tab-title:not(.active) ~ .tab-content {
+      display: none;
+    }
+  }
+  

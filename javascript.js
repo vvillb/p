@@ -10,3 +10,15 @@ window.addEventListener('scroll', function() {
     
     }
 });
+
+document.querySelectorAll(".tabs-accordion .tab-title").forEach(button => {
+    button.addEventListener("click", () => {
+      const activeButton = document.querySelector(".tabs-accordion .tab-title.active");
+      activeButton.classList.remove("active");
+      activeButton.nextElementSibling.style.maxHeight = 0;
+      
+      button.classList.add("active");
+      button.nextElementSibling.style.maxHeight = "100vh";
+    });
+  });
+  
